@@ -5,6 +5,7 @@
   "main": "lib/typegoose.js",
   "scripts": {
     "start": "npm run build && node ./lib/typegoose.js",
+    "prepublish": "npm run build",
     "build": "rimraf lib && tsc",
     "lint": "tslint --project tsconfig.json",
     "test": "npm run lint && npm run cover",
